@@ -1,0 +1,21 @@
+[
+    {
+      "mainText": "Math",
+      "subText": "12 lessons",
+      "imageUrl": "https://wallpaperaccess.com/full/5011470.jpg",
+      "color": "orange"
+    },
+    {
+      "mainText": "Science",
+      "subText": "12 lessons",
+      "imageUrl": "https://static.vecteezy.com/system/resources/previews/022/006/638/non_2x/science-background-illustration-scientific-design-flasks-glass-and-chemistry-physics-elements-generative-ai-photo.jpeg",
+      "color": "lightgreen"
+    },
+    {
+      "mainText": "Languages",
+      "subText": "5 lessons",
+      "imageUrl": "https://wallpaperaccess.com/full/1260521.jpg",
+      "color": "lightcoral"
+    }
+  ]
+  
