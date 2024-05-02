@@ -13,45 +13,45 @@ const Tab = createBottomTabNavigator();
 const BottomTabNavigator = () => {
   return (
     <View style={styles.container}>
-    <Tab.Navigator
-      screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused, color, size }) => {
-          return null;
-        },
-        tabBarLabel: ({ focused, color }) => {
-          let label;
-          let iconName;
-          let textColor = focused ? 'white' : 'black';
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused, color, size }) => {
+            return null;
+          },
+          tabBarLabel: ({ focused, color }) => {
+            let label;
+            let iconName;
+            let textColor = focused ? 'white' : 'black';
 
-          if (route.name === 'Home') {
-            label = 'Home';
-            iconName = focused ? 'home' : 'home-outline';
-          } else if (route.name === 'Sample') {
-            label = 'Sample';
-            iconName = focused ? 'bag-check' : 'bag-check-outline';
-          } else if (route.name === 'Sample1') {
-            label = 'Sample1';
-            iconName = focused ? 'person-circle' : 'person-circle-outline';
-          } else if (route.name === 'Sample2') {
-            label = 'Sample2';
-            iconName = focused ? 'settings' : 'settings-outline';
-          }
+            if (route.name === 'Home') {
+              label = 'Home';
+              iconName = focused ? 'home' : 'home-outline';
+            } else if (route.name === 'Sample') {
+              label = 'Sample';
+              iconName = focused ? 'bag-check' : 'bag-check-outline';
+            } else if (route.name === 'Sample1') {
+              label = 'Sample1';
+              iconName = focused ? 'person-circle' : 'person-circle-outline';
+            } else if (route.name === 'Sample2') {
+              label = 'Sample2';
+              iconName = focused ? 'settings' : 'settings-outline';
+            }
 
-          return (
-            <View style={{flexDirection: 'row', alignItems: 'center', backgroundColor: focused ? '#000000' : 'transparent', borderRadius: focused ? 5 : 0,padding:5}}>
-              <Ionicons name={iconName} size={20} color={textColor} />
-              {focused && <Text style={{ marginLeft: 3,color:textColor }}>{label}</Text>}
-            </View>
-          );
-        },
-      })}
-      tabBarStyle={{ justifyContent: 'center', alignItems: 'center'}}
-    >
-      <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
-      <Tab.Screen name="Sample" component={Sample} options={{ headerShown: false }} />
-      <Tab.Screen name="Sample1" component={SampleOne} options={{ headerShown: false }} />
-      <Tab.Screen name="Sample2" component={SampleTwo} options={{ headerShown: false }} />
-    </Tab.Navigator>
+            return (
+              <View style={{flexDirection: 'row', alignItems: 'center', backgroundColor: focused ? '#000000' : 'transparent', borderRadius: focused ? 5 : 0,padding:5}}>
+                <Ionicons name={iconName} size={20} color={textColor} />
+                {focused && <Text style={{ marginLeft: 3,color:textColor }}>{label}</Text>}
+              </View>
+            );
+          },
+        })}
+        tabBarStyle={{ justifyContent: 'center', alignItems: 'center'}}
+      >
+        <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+        <Tab.Screen name="Sample" component={Sample} options={{ headerShown: false }} />
+        <Tab.Screen name="Sample1" component={SampleOne} options={{ headerShown: false }} />
+        <Tab.Screen name="Sample2" component={SampleTwo} options={{ headerShown: false }} />
+      </Tab.Navigator>
     </View>
   );
 };

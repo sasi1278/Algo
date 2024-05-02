@@ -15,13 +15,10 @@ const YourComponent = () => {
   return (
      <SafeAreaView style={styles.container}>
       <StatusBar/>
-      {isShow? 
-      <MainScreen changeShow={changeShow}/>
-      :
+      {isShow ? <MainScreen changeShow={changeShow}/>:
       <NavigationContainer>
         <BottomTabNavigator/>
-      </NavigationContainer>
-      }
+      </NavigationContainer>}
       
     </SafeAreaView>
   );

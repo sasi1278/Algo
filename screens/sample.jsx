@@ -11,4 +11,4 @@ const Sample=()=>{
     )
 }
 
-export default Sample
+export default Sample;
