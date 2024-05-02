@@ -1,9 +1,9 @@
 import React from 'react';
-import { FlatList,View,Text,KeyboardAvoidingView,Platformmimage,Image ,ScrollView} from 'react-native';
+import { FlatList,View,Text,KeyboardAvoidingView,Platform,Image ,ScrollView} from 'react-native';
 import Card from '../../components/Card';
 import cardsData from  '../../assets/cards.json';
 import OngoingCard from '../../components/OngoingCard';
-import ongoingTaks from '../../assets/ongoingTask.json';
+import ongoingTasks from '../../assets/ongoingTask.json';
 import SearchComponent from '../../components/Search';
 import styles from './styles';
 import { Ionicons } from '@expo/vector-icons';
@@ -29,7 +29,6 @@ const HomeScreen = () => {
   )
 
   return (
-    // <ScrollView contentContainerStyle={styles.scrollViewContainer}>
       <View style={styles.mainContainer}>
         <View>
           <View style={styles.itemcontainer}>
@@ -69,7 +68,7 @@ const HomeScreen = () => {
             Ongoing
           </Text>
           <FlatList
-            data={ongoingTaks}
+            data={ongoingTasks}
             renderItem={renderCardItem}
             keyExtractor={(item, index) => index.toString()}
             keyboardShouldPersistTaps="handled" 
@@ -77,7 +76,6 @@ const HomeScreen = () => {
           />
         </View>
       </View>
-    // </ScrollView>
   );
 };
 

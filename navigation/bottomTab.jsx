@@ -45,7 +45,7 @@ const BottomTabNavigator = () => {
           );
         },
       })}
-      tabBarStyle={{ justifyContent: 'center', alignItems: 'center', ...styles.tabBar }}
+      tabBarStyle={{ justifyContent: 'center', alignItems: 'center'}}
     >
       <Tab.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="Sample" component={Sample} options={{ headerShown: false }} />
