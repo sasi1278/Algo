@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { SafeAreaView,StyleSheet,StatusBar, View} from 'react-native';
 import HomeScreen from './screens/home';
 import MainScreen from './screens/main';
-import BottomTabNavigator from './navigayion/bottomTab';
+import BottomTabNavigator from './navigation/bottomTab';
 import { NavigationContainer } from '@react-navigation/native';
 import { height } from './assets/dimensions';
 
